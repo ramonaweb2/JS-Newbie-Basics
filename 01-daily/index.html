@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система за управление на филми</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Система за управление на филми</h1>
+    <form id="movie-form">
+        <label for="title"></label>
+        <input type="text" id="title" placeholder="Заглавие" required>
+
+        <label for="genre"></label>
+        <input type="text" id="genre" placeholder="Жанр" required>
+
+        <label for="year"></label>
+        <input type="number" id="year" placeholder="Година" required>
+        <button type="submit">Добави филм</button>
+    </form>
+    
+    <h2>Списък с филми</h2>
+    <label for="filter-genre"></label>
+    <select id="filter-genre">
+        <option value="">Всички жанрове</option>
+        <option value="екшън">Екшън</option>
+        <option value="драма">Драма</option>
+        <option value="комедия">Комедия</option>
+    </select>
+    
+    <ul id="movie-list"></ul>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
